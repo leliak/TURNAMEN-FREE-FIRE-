@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Turnamen Free Fire - Squad BR</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+      color: white;
+    }
+    header {
+      background-image: url('https://cdn.cloudflare.steamstatic.com/steam/apps/1238840/ss_b6a12c99f7c88a1bbcc648fbcf4e1d0bda4d7fcf.1920x1080.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
+      text-align: center;
+      color: #FFD700;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      margin-top: -50px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: none;
+    }
+    input[type="file"] {
+      background-color: white;
+      color: black;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+    }
+    .wa-button {
+      background-color: #25D366;
+      color: white;
+      margin-top: 20px;
+    }
+    .payment-box {
+      margin-top: 30px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TURNAMEN FREE FIRE</h1>
+    <p>SQUAD - BATTLE ROYALE | Slot Terbatas 12 Tim</p>
+  </header>
+
+  <div class="container">
+    <h2>Formulir Pendaftaran</h2>
+    <form action="https://formspree.io/f/mkgrnjdz" method="POST" enctype="multipart/form-data">
+      <label for="teamName">Nama Tim</label>
+      <input type="text" id="teamName" name="Nama Tim" required>
+
+      <label for="leaderName">Nama Ketua Tim</label>
+      <input type="text" id="leaderName" name="Ketua Tim" required>
+
+      <label for="members">Anggota Tim (Max 4)</label>
+      <textarea id="members" name="Anggota Tim" rows="3" placeholder="Pisahkan dengan koma" required></textarea>
+
+      <label for="idLeader">ID Leader</label>
+      <input type="text" id="idLeader" name="ID Leader" required>
+
+      <label for="waNumber">No WhatsApp</label>
+      <input type="tel" id="waNumber" name="No WhatsApp" required>
+
+      <label for="buktiPembayaran">Upload Bukti Pembayaran</label>
+      <input type="file" id="buktiPembayaran" name="Bukti Pembayaran" accept="image/*" required>
+
+      <button type="submit">Kirim Pendaftaran</button>
+    </form>
+
+    <div class="payment-box">
+      <h3>Metode Pembayaran</h3>
+      <p>Silakan transfer biaya pendaftaran sebesar <strong>Rp40.000</strong> ke:</p>
+      <p><strong>DANA:</strong> 082260493672<br>
+      <strong>Atas Nama:</strong> Orlando Leliak</p>
+      <p>Upload bukti pembayaran melalui form di atas dan konfirmasi ke admin melalui WhatsApp.</p>
+    </div>
+
+    <a href="https://chat.whatsapp.com/LGQvQyj4G201wbeng0nFc5" target="_blank">
+      <button class="wa-button">Gabung Grup WhatsApp</button>
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2025 Turnamen FF Squad - Diselenggarakan oleh Admin
+  </footer>
+</body>
+</html>
